@@ -22,3 +22,66 @@
 body {
     background-color: var(--app-dark-bg);
 }
+
+.container-clock {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    flex-direction: row;
+    place-content: center;
+}
+
+#clock {
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+#alarm-input {
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    background-color:#404040;
+    padding: 20px;
+}
+
+button {
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    background-color:var(--app-green);
+}
+
+button:hover {
+    background-color:#00b16a;
+}
+
+i {
+    color: #fff;
+    font-size: 23px;
+}
+
+#alarm-form {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#alarm-input + #button {
+    margin-left: 15px;
+}
+
+span {
+    color: #fff;
+}

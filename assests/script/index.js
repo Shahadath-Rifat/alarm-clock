@@ -7,8 +7,7 @@ const alarmForm = document.getElementById('alarm-form');
 const alarmInput = document.getElementById('alarm-input');
 const alarmButton = document.getElementById('button');
 const alarmMessage = document.querySelector('.txt');
-const alarmSound = new Audio('./assests/audio/alarm.mp3');
-alarmSound.type = 'audio/mp3';
+
 
 // Set the clock to update every second
 setInterval(() => {
@@ -21,6 +20,8 @@ setInterval(() => {
 
   // Check if the alarm should go off
   if (timeString === alarmInput.value) {
+    const alarmSound = new Audio('./assests/audio/alarm.mp3');
+    alarmSound.type = 'audio/mp3';
     alarmSound.play();
     alarmMessage.textContent = 'Alarm set for ' + alarmInput.value;
     alarmInput.value = '';

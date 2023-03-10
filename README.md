@@ -1,6 +1,6 @@
 ## Welcome
 
-Hello there, this is a simple alarm clock using JavaScript.  
+Hello there, this is a simple alarm clock using JavaScript. Hope you like it.   
 
 ### Demo
 Click [here] ( ) to test the website

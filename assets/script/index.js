@@ -20,9 +20,11 @@ setInterval(() => {
 
   // Check if the alarm should go off
   if (timeString === alarmInput.value) {
-    const alarmSound = new Audio('./assests/audio/alarm.mp3');
+    const alarmSound = new Audio('./assets/audio/alarm.mp3');
     alarmSound.type = 'audio/mp3';
+    alarmSound.muted = true;
     alarmSound.play();
+    alarmSound.muted = false;
     alarmMessage.textContent = 'Alarm set for ' + alarmInput.value;
     alarmInput.value = '';
     alarmButton.disabled = false;
